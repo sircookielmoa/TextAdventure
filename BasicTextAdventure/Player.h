@@ -26,13 +26,7 @@ public:
 	int xpos = 0;
 	int ypos = 0;
 
-
-
-
 private:
 	Spell* grimoire[7];
-
-
-protected:
 };
 

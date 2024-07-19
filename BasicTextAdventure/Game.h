@@ -13,7 +13,6 @@ public:
 
 	Item** collectionItems;
 
-
 private:
 	Player* mainPlayer;
 	Room* castle[3][3];

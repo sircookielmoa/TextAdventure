@@ -10,8 +10,5 @@ public:
 	~Stick();
 
 	void Use(String _playerInput) override;
-
-private:
-
 };
 

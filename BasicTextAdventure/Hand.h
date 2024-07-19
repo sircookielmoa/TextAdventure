@@ -9,8 +9,5 @@ public:
 	~Hand();
 
 	void Use(String _playerInput) override;
-
-private:
-
 };
 

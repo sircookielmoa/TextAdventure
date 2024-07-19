@@ -10,8 +10,5 @@ public:
 	~SmallBoy();
 
 	void Use(String _playerInput) override;
-
-private:
-
 };
 

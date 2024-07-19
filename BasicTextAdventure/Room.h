@@ -17,7 +17,4 @@ public:
 private:
 
 	String description;
-
-protected:
-
 };

@@ -10,8 +10,5 @@ public:
 	~Toilet();
 
 	void Use(String _playerInput) override;
-
-private:
-
 };
 

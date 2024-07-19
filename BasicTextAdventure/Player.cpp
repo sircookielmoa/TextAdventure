@@ -102,7 +102,7 @@ void Player::OpenBook()
 	//std::cout << "\n-----Spells------\nflame blast\nblack flame\nlightning spear\nfrenzied burst\nscarlet aeonia\nruin\nroar\n";
 	for (int i = 0; i < 7; i++)
 	{
-		std::cout << "\t[" << this->grimoire[i]->name << "]\n";
+		std::cout << "\t[" << this->grimoire[i]->GetName() << "]\n";
 	}
 }
 
@@ -115,16 +115,18 @@ bool Player::FindSpell(String spell)
 	while (low <= high)
 	{
 		middle = ((high + low) / 2);
-		
-		if (spell == grimoire[middle]->name)
+
+		String currentName = grimoire[middle]->GetName();
+
+		if (spell == currentName)
 		{
 			return true;
 		}
-		else if (spell < grimoire[middle]->name)
+		else if (spell < currentName)
 		{
 			high = middle - 1;
 		}
-		else if (grimoire[middle]->name < spell)
+		else if (currentName < spell)
 		{
 			low = middle + 1;
 		}

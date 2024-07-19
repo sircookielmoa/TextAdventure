@@ -8,12 +8,13 @@ public:
 	Spell(String name, String description, int damage);
 	~Spell();
 
-	String name;
-	String description;
-	int damage;
+	String GetName();
+	String GetDescription();
+	int GetDamage();
 
 private:
 
-protected:
-
+	String name;
+	String description;
+	int damage;
 };
