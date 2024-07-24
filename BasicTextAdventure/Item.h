@@ -8,10 +8,10 @@ public:
 	Item(String name, String description);
 	virtual ~Item();
 
-	String _description;
 	String _name;
+	String _description;
 
 	virtual void Use();
-	virtual void Description();
+	virtual String Description();
 	virtual void Use(String _playerInput);
 };

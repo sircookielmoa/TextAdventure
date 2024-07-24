@@ -37,3 +37,8 @@ void SmallBoy::Use(String _playerInput)
 		}
 	}
 }
+
+String SmallBoy::Description()
+{
+	return "\n\tA small boy missing both his hands, could prove useful. ";
+}
