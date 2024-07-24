@@ -18,9 +18,9 @@ void Item::Use()
 {
 }
 
-void Item::Description()
+String Item::Description()
 {
-	return Description();
+	return String();
 }
 
 void Item::Use(String _playerInput)
