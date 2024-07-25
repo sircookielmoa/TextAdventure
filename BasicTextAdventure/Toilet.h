@@ -6,9 +6,11 @@ class Toilet : public Item
 {
 public:
 	Toilet();
-	Toilet(String name, String description);
+	Toilet(String name);
 	~Toilet();
 
 	void Use(String _playerInput) override;
+	void Description() const override;
+
 };
 

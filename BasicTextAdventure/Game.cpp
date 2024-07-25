@@ -13,12 +13,11 @@ Game::Game()
 	//Make items
 	collectionItems = new Item * [9];
 
-	Item* item00 = new Stick("Stick", "\n\tThis is a stick... Its brown and sticky. ");
+	Item* item00 = new Stick("Stick");
 	Item* item01 = new SmallBoy("Hayden");
-	Item* item02 = new Hand("Hand", "\n\tA gross severed hand... I wonder whos this is. ");
-
-	Item* item03 = new Toilet("Toilet", "\n\tA Golden d20 with a seat on it throne, fit for Tom: the god of 20 sided dice.");
-	Item* item04 = new SmallBoy("Hugh", "\n\tA small boy with both his hands, much cooler then Hayden. ");
+	Item* item02 = new Hand("Hand");
+	Item* item03 = new Toilet("Toilet");
+	Item* item04 = new SmallBoy("Hugh");
 
 	collectionItems[0] = item00; //stick
 	collectionItems[1] = item03; //toilet
@@ -90,7 +89,7 @@ void Game::Run()
 
 		std::cout << "\t-----Actions-----\n\tMove\n\tOpen Grimoire\n\tFind Item\n" << std::endl;
 
-		this->castle[xPos][yPos]->GetDescription().WriteToConsole();
+		this->castle[xPos][yPos]->GetDescription();
 		std::cout << "\n\tthere is an item in this room. " << std::endl;
 
 		bool playerActions = true;
@@ -131,7 +130,7 @@ void Game::Run()
 				//std::cout << "\tDescription: ";
 				//std::cout << "\n\t";
 				//std::cout << std::endl;
-				std::cout << "\n\tWhat do to with this item?\n\n\tuse\t\n\tview\t "; //Asking for player use input.
+				std::cout << "\n\tWhat do to with this item?\n\n\tuse\t\n\tread\t "; //Asking for player use input.
 				String itemInput;
 				std::cout << "\n\t>";
 				itemInput.ReadFromConsole().ToLower();
@@ -140,9 +139,11 @@ void Game::Run()
 				{
 					this->castle[xPos][yPos]->item->Use(itemInput.ToLower());
 				}
-				if (itemInput == "view")
+				if (itemInput == "read")
 				{
-				this->castle[xPos][yPos]->item->_description.WriteToConsole(); // description of item in the currnet room.
+					this->castle[xPos][yPos]->item->Description(); // description of item in the currnet room.
+
+					//this->castle[xPos][yPos]->item->_description.WriteToConsole(); // description of item in the currnet room.
 				}
 				std::cout << std::endl;
 			}

@@ -9,7 +9,7 @@ public:
 	Room(Item& _itemSlot);
 	~Room();
 	
-	String GetDescription();
+	void GetDescription() const; 
 	void SetDescription(const String _other);
 
 	Item* item;

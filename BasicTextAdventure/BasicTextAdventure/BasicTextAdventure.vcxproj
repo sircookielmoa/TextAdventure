@@ -25,6 +25,7 @@
     <ClCompile Include="..\Player.cpp" />
     <ClCompile Include="..\Room.cpp" />
     <ClCompile Include="..\SmallBoy.cpp" />
+    <ClCompile Include="..\SmallBoy2.cpp" />
     <ClCompile Include="..\Spell.cpp" />
     <ClCompile Include="..\Stick.cpp" />
     <ClCompile Include="..\String.cpp" />
@@ -38,6 +39,7 @@
     <ClInclude Include="..\Player.h" />
     <ClInclude Include="..\Room.h" />
     <ClInclude Include="..\SmallBoy.h" />
+    <ClInclude Include="..\SmallBoy2.h" />
     <ClInclude Include="..\Spell.h" />
     <ClInclude Include="..\Stick.h" />
     <ClInclude Include="..\String.h" />

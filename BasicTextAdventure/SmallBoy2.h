@@ -2,14 +2,16 @@
 
 #include "Item.h"
 
-class Stick : public Item
+class SmallBoy2 : public Item
 {
 public:
-	Stick();
-	Stick(String name);
-	~Stick();
+	SmallBoy2();
+	SmallBoy2(String name);
+	~SmallBoy2();
 
 	void Use(String _playerInput) override;
 	void Description() const override;
-};
 
+private:
+	bool boyDancing;
+};

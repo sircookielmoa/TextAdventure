@@ -4,7 +4,7 @@ Hand::Hand()
 {
 }
 
-Hand::Hand(String name, String description) :Item(name, description)
+Hand::Hand(String name) :Item(name)
 {
 }
 
@@ -18,4 +18,9 @@ void Hand::Use(String _playerInput)
 	{
 		std::cout << "\n\t\tyou hi-five the hand" << std::endl;
 	}
+}
+
+void Hand::Description() const
+{
+	std::cout << "\n\tA gross severed hand... I wonder whos this is. ";
 }

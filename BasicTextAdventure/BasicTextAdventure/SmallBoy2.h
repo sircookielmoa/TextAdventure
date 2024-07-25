@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Item.h"
+#include "../Item.h"
 
 class SmallBoy : public Item
 {
@@ -10,8 +10,6 @@ public:
 	~SmallBoy();
 
 	void Use(String _playerInput) override;
-	void Description() const override;
-
-private:
-	bool boyDancing;
+	String Description() override;
 };
+

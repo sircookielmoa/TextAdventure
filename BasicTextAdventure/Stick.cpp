@@ -4,7 +4,7 @@ Stick::Stick()
 {
 }
 
-Stick::Stick(String name, String description) :Item(name, description)
+Stick::Stick(String name) :Item(name)
 {
 }
 
@@ -34,4 +34,9 @@ void Stick::Use(String _playerInput)
 	{
 		std::cout << "\n\t\tinvalid option" << std::endl;
 	}
+}
+
+void Stick::Description() const
+{
+	std::cout << "\n\tThis is a stick... Its brown and sticky. ";
 }

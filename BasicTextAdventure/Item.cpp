@@ -5,10 +5,9 @@
 
 Item::Item() {}
 
-Item::Item(String name, String description)
+Item::Item(String name)
 {
 	_name = name;
-	_description = description;
 }
 
 
@@ -18,9 +17,9 @@ void Item::Use()
 {
 }
 
-String Item::Description()
+void Item::Description() const
 {
-	return String();
+	
 }
 
 void Item::Use(String _playerInput)

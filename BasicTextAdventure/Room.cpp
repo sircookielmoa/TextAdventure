@@ -1,5 +1,7 @@
 #include "Room.h"
 
+#include <iostream>
+
 //In your rooms you need to make new items.
 Room::Room(){}
 
@@ -15,8 +17,8 @@ void Room::SetDescription(const String _other)
 	description = _other;
 }
 
-String Room::GetDescription()
+void Room::GetDescription() const
 {
-	return description;
+	std::cout << description;
 }
 

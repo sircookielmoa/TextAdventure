@@ -4,7 +4,7 @@ Toilet::Toilet()
 {
 }
 
-Toilet::Toilet(String name, String description) :Item(name, description)
+Toilet::Toilet(String name) :Item(name)
 {
 }
 
@@ -34,4 +34,9 @@ void Toilet::Use(String _playerInput)
 	{
 		std::cout << "\n\t\tinvalid option" << std::endl;
 	}
+}
+
+void Toilet::Description() const
+{
+	std::cout << "\n\tA Golden d20 with a seat on it, a throne... fit for Tom.";
 }

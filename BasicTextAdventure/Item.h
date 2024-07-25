@@ -5,13 +5,13 @@ class Item
 {
 public:
 	Item();
-	Item(String name, String description);
+	Item(String name);
 	virtual ~Item();
 
 	String _name;
 	String _description;
 
 	virtual void Use();
-	virtual String Description();
+	virtual void Description() const;
 	virtual void Use(String _playerInput);
 };
